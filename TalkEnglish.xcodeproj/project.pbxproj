@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E57499AA1169FC44C072B62B /* Pods_TalkEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC6DEC064C75723C2CD9F19 /* Pods_TalkEnglish.framework */; };
+		F876E7162061796A00599C47 /* example.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F876E7152061796A00599C47 /* example.mp3 */; };
 		F8BF8DFB1FE1802F0005B2BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF8DFA1FE1802F0005B2BF /* AppDelegate.swift */; };
 		F8BF8DFD1FE1802F0005B2BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF8DFC1FE1802F0005B2BF /* ViewController.swift */; };
 		F8BF8E001FE1802F0005B2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BF8DFE1FE1802F0005B2BF /* Main.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CC6DEC064C75723C2CD9F19 /* Pods_TalkEnglish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkEnglish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42691C5993124B8C63D083BA /* Pods-TalkEnglish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkEnglish.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkEnglish/Pods-TalkEnglish.release.xcconfig"; sourceTree = "<group>"; };
+		8C9B0F845F045F2F595DDE0D /* Pods-TalkEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkEnglish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkEnglish/Pods-TalkEnglish.debug.xcconfig"; sourceTree = "<group>"; };
+		F876E7152061796A00599C47 /* example.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = example.mp3; sourceTree = "<group>"; };
 		F8BF8DF71FE1802F0005B2BF /* TalkEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BF8DFA1FE1802F0005B2BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8BF8DFC1FE1802F0005B2BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +35,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57499AA1169FC44C072B62B /* Pods_TalkEnglish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D80ABF81F5CD50F60892A12A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CC6DEC064C75723C2CD9F19 /* Pods_TalkEnglish.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F876E7132061795100599C47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F876E7142061795900599C47 /* Audios */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F876E7142061795900599C47 /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				F876E7152061796A00599C47 /* example.mp3 */,
+			);
+			path = Audios;
+			sourceTree = "<group>";
+		};
 		F8BF8DEE1FE1802E0005B2BF = {
 			isa = PBXGroup;
 			children = (
 				F8BF8DF91FE1802F0005B2BF /* TalkEnglish */,
 				F8BF8DF81FE1802F0005B2BF /* Products */,
+				FE88ACD23C70664D81DBE2F6 /* Pods */,
+				D80ABF81F5CD50F60892A12A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +87,7 @@
 		F8BF8DF91FE1802F0005B2BF /* TalkEnglish */ = {
 			isa = PBXGroup;
 			children = (
+				F876E7132061795100599C47 /* Resources */,
 				F8BF8DFA1FE1802F0005B2BF /* AppDelegate.swift */,
 				F8BF8DFC1FE1802F0005B2BF /* ViewController.swift */,
 				F8BF8DFE1FE1802F0005B2BF /* Main.storyboard */,
@@ -64,6 +98,15 @@
 			path = TalkEnglish;
 			sourceTree = "<group>";
 		};
+		FE88ACD23C70664D81DBE2F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C9B0F845F045F2F595DDE0D /* Pods-TalkEnglish.debug.xcconfig */,
+				42691C5993124B8C63D083BA /* Pods-TalkEnglish.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8BF8E091FE1802F0005B2BF /* Build configuration list for PBXNativeTarget "TalkEnglish" */;
 			buildPhases = (
+				F152AC6A97D080630F326F24 /* [CP] Check Pods Manifest.lock */,
 				F8BF8DF31FE1802F0005B2BF /* Sources */,
 				F8BF8DF41FE1802F0005B2BF /* Frameworks */,
 				F8BF8DF51FE1802F0005B2BF /* Resources */,
+				DAE47E8EA3DE00B8F7E01A21 /* [CP] Embed Pods Frameworks */,
+				51161788F58EDA5B7932556F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +170,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8BF8E051FE1802F0005B2BF /* LaunchScreen.storyboard in Resources */,
+				F876E7162061796A00599C47 /* example.mp3 in Resources */,
 				F8BF8E021FE1802F0005B2BF /* Assets.xcassets in Resources */,
 				F8BF8E001FE1802F0005B2BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51161788F58EDA5B7932556F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalkEnglish/Pods-TalkEnglish-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE47E8EA3DE00B8F7E01A21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalkEnglish/Pods-TalkEnglish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F152AC6A97D080630F326F24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8BF8DF31FE1802F0005B2BF /* Sources */ = {
@@ -272,6 +367,7 @@
 		};
 		F8BF8E0A1FE1802F0005B2BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9B0F845F045F2F595DDE0D /* Pods-TalkEnglish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +383,7 @@
 		};
 		F8BF8E0B1FE1802F0005B2BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42691C5993124B8C63D083BA /* Pods-TalkEnglish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

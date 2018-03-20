@@ -1,0 +1,6 @@
+framework module Pods_TalkEnglish {
+  umbrella header "Pods-TalkEnglish-umbrella.h"
+
+  export *
+  module * { export * }
+}
