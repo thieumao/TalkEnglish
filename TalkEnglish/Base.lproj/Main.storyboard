@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,10 +24,46 @@
                                     <action selector="playButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HOl-mC-NuH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Beh-ru-FZR">
+                                <rect key="frame" x="166" y="90" width="42" height="30"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhj-YE-ffK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHL-fN-j0c">
+                                <rect key="frame" x="164" y="140" width="46" height="30"/>
+                                <state key="normal" title="Replay"/>
+                                <connections>
+                                    <action selector="replayButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Acd-JQ-Y9X"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NZZ-Wo-Gya">
+                                <rect key="frame" x="20" y="190" width="335" height="150"/>
+                                <color key="backgroundColor" red="0.94902223348617554" green="0.94901949167251587" blue="0.94901150465011597" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="t7s-c1-ugg"/>
+                                </constraints>
+                                <string key="text">Doug: I think I made a mistake last night.
+Sarah: What did you do?
+Doug: I met a recruiter at an event and she thinks I asked her out on a date.
+Sarah: Why does she think that?
+Doug: I asked for her phone number and if she was available for lunch. 
+Sarah: You didn't make yourself very clear. You need to act more professional. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94902223348617554" green="0.94901949167251587" blue="0.94901150465011597" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="y8b-LT-vZW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0z5-1p-QnH"/>
+                            <constraint firstItem="lHL-fN-j0c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1r3-ND-svb"/>
+                            <constraint firstItem="NZZ-Wo-Gya" firstAttribute="top" secondItem="lHL-fN-j0c" secondAttribute="bottom" constant="20" id="6Ro-c3-ctW"/>
+                            <constraint firstItem="NZZ-Wo-Gya" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="716-f6-34x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NZZ-Wo-Gya" secondAttribute="trailing" constant="20" id="HOn-C5-3dN"/>
+                            <constraint firstItem="lHL-fN-j0c" firstAttribute="top" secondItem="Beh-ru-FZR" secondAttribute="bottom" constant="20" id="eI9-WV-Ry3"/>
+                            <constraint firstItem="Beh-ru-FZR" firstAttribute="top" secondItem="y8b-LT-vZW" secondAttribute="bottom" constant="20" id="jef-xD-266"/>
+                            <constraint firstItem="Beh-ru-FZR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kDQ-qQ-ppT"/>
                             <constraint firstItem="y8b-LT-vZW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rE8-Cz-Zkm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

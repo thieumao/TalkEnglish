@@ -11,8 +11,8 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    var bombSoundEffect: AVAudioPlayer?
-    
+    var myPlayer: AVAudioPlayer?
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,21 +21,37 @@ class ViewController: UIViewController {
 // IBAction - button click event
 extension ViewController {
     @IBAction func playButtonClicked(_ sender: Any) {
-        playDemo("example.mp3")
+        playAudio("example.mp3")
+    }
+    
+    @IBAction func pauseButtonClicked(_ sender: Any) {
+        pauseAudio()
+    }
+    
+    @IBAction func replayButtonClicked(_ sender: Any) {
+        replayAudio()
     }
 }
 
 // Play MP3
 extension ViewController {
-    func playDemo(_ fileName: String) {
+    func playAudio(_ fileName: String) {
         let path = Bundle.main.path(forResource: fileName, ofType:nil)!
         let url = URL(fileURLWithPath: path)
         
         do {
-            bombSoundEffect = try AVAudioPlayer(contentsOf: url)
-            bombSoundEffect?.play()
+            myPlayer = try AVAudioPlayer(contentsOf: url)
+            myPlayer?.play()
         } catch {
             // couldn't load file :(
         }
+    }
+    
+    func pauseAudio() {
+        myPlayer?.pause()
+    }
+    
+    func replayAudio(){
+        myPlayer?.play()
     }
 }
