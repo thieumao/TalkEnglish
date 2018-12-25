@@ -11,28 +11,28 @@ import UIKit
 class TopicListVC: UIViewController {
 
     //  21 tình huống giao tiếp thường gặp
-    let topList = [
-        "Đề nghị xin phép",
-        "Giao tiếp công sở",
-        "Giao tiếp đi mua sắm",
-        "Giao tiếp đi tham quan",
-        "Giao tiếp du lịch",
-        "Giao tiếp hiệu chụp ảnh",
-        "Giao tiếp phỏng vấn xin việc",
-        "Giao tiếp tại bệnh viên",
-        "Giao tiếp tại bưu điện",
-        "Giao tiếp tại hiệu thuốc",
-        "Giao tiếp tại ngân hàng",
-        "Giao tiếp tại nhà ga",
-        "Giao tiếp tại nhà hàng",
-        "Giao tiếp tại rạp chiếu phim",
-        "Giao tiếp văn phòng",
-        "Hỏi thăm bạn bè",
-        "Lần đầu gặp mặt",
-        "Lo lắng buồn chán",
-        "Nói về sở thích",
-        "Tiếng Anh Giao Tiếp Thương Mại",
-        "Vui Mừng Hạnh Phúc"
+    private let topics = [
+        "Đề nghị xin phép", // 0
+        "Giao tiếp công sở", // 1
+        "Giao tiếp đi mua sắm", // 2
+        "Giao tiếp đi tham quan", // 3
+        "Giao tiếp du lịch", // 4
+        "Giao tiếp hiệu chụp ảnh", // 5
+        "Giao tiếp phỏng vấn xin việc", // 6
+        "Giao tiếp tại bệnh viên", // 7
+        "Giao tiếp tại bưu điện", // 8
+        "Giao tiếp tại hiệu thuốc", // 9
+        "Giao tiếp tại ngân hàng", // 10
+        "Giao tiếp tại nhà ga", // 11
+        "Giao tiếp tại nhà hàng", // 12
+        "Giao tiếp tại rạp chiếu phim", // 13
+        "Giao tiếp văn phòng", // 14
+        "Hỏi thăm bạn bè", // 15
+        "Lần đầu gặp mặt", // 16
+        "Lo lắng buồn chán", // 17
+        "Nói về sở thích", // 18
+        "Vui Mừng Hạnh Phúc", // 19
+        "Tiếng Anh Giao Tiếp Thương Mại" // 20
     ]
 
     @IBOutlet weak var myTable: UITableView!
@@ -50,7 +50,7 @@ extension TopicListVC: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return topList.count
+        return topics.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,7 +62,7 @@ extension TopicListVC: UITableViewDelegate, UITableViewDataSource {
             )
             cell = tableView.dequeueReusableCell(withIdentifier: "TopicTableViewCell") as? TopicTableViewCell
         }
-        cell?.topicLabel.text = topList[indexPath.row]
+        cell?.topicLabel.text = topics[indexPath.row]
         cell?.index = indexPath.row
         cell?.clickedTopicClosure = { [weak self] index in
             self?.pushStudyVC(index)
@@ -75,6 +75,8 @@ extension TopicListVC: UITableViewDelegate, UITableViewDataSource {
         guard let studyVC = UIStoryboard.init(name: "Main", bundle: Bundle.main)
             .instantiateViewController(withIdentifier: "StudyVC") as? StudyVC
         else { return }
+        studyVC.index = index
+        studyVC.studyTitle = topics[index]
         self.navigationController?.pushViewController(studyVC, animated: true)
     }
 }

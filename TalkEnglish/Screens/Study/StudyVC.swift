@@ -10,11 +10,43 @@ import UIKit
 import AVFoundation
 
 class StudyVC: UIViewController {
-    
-    var myPlayer: AVAudioPlayer?
+
+    var index = 0
+    var studyTitle = ""
+    private var myPlayer: AVAudioPlayer?
+
+    //  21 tình huống giao tiếp thường gặp
+    private let topics = [
+        "Đề nghị xin phép", // 0
+        "Giao tiếp công sở", // 1
+        "Giao tiếp đi mua sắm", // 2
+        "Giao tiếp đi tham quan", // 3
+        "Giao tiếp du lịch", // 4
+        "Giao tiếp hiệu chụp ảnh", // 5
+        "Giao tiếp phỏng vấn xin việc", // 6
+        "Giao tiếp tại bệnh viên", // 7
+        "Giao tiếp tại bưu điện", // 8
+        "Giao tiếp tại hiệu thuốc", // 9
+        "Giao tiếp tại ngân hàng", // 10
+        "Giao tiếp tại nhà ga", // 11
+        "Giao tiếp tại nhà hàng", // 12
+        "Giao tiếp tại rạp chiếu phim", // 13
+        "Giao tiếp văn phòng", // 14
+        "Hỏi thăm bạn bè", // 15
+        "Lần đầu gặp mặt", // 16
+        "Lo lắng buồn chán", // 17
+        "Nói về sở thích", // 18
+        "Vui Mừng Hạnh Phúc", // 19
+        "Tiếng Anh Giao Tiếp Thương Mại" // 20
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        title = studyTitle
     }
 }
 
