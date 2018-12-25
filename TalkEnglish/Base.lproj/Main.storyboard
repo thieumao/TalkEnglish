@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VMc-j9-8HR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,21 +19,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8b-LT-vZW">
-                                <rect key="frame" x="172" y="40" width="30" height="30"/>
+                                <rect key="frame" x="172.5" y="40" width="30" height="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="playButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HOl-mC-NuH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Beh-ru-FZR">
-                                <rect key="frame" x="166" y="90" width="42" height="30"/>
+                                <rect key="frame" x="166.5" y="90" width="42" height="30"/>
                                 <state key="normal" title="Pause"/>
                                 <connections>
                                     <action selector="pauseButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhj-YE-ffK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHL-fN-j0c">
-                                <rect key="frame" x="164" y="140" width="46" height="30"/>
+                                <rect key="frame" x="164.5" y="140" width="46" height="30"/>
                                 <state key="normal" title="Replay"/>
                                 <connections>
                                     <action selector="replayButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Acd-JQ-Y9X"/>
@@ -71,6 +72,36 @@ Sarah: You didn't make yourself very clear. You need to act more professional. <
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Topic ListVC-->
+        <scene sceneID="8mb-cl-Ns9">
+            <objects>
+                <viewController id="VMc-j9-8HR" customClass="TopicListVC" customModule="TalkEnglish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jcd-lG-MLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E0X-iq-nhk">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E0X-iq-nhk" firstAttribute="top" secondItem="Jjy-Va-v2e" secondAttribute="top" id="NoS-nn-f5Q"/>
+                            <constraint firstItem="E0X-iq-nhk" firstAttribute="trailing" secondItem="Jjy-Va-v2e" secondAttribute="trailing" id="Nxd-43-1Ol"/>
+                            <constraint firstItem="E0X-iq-nhk" firstAttribute="bottom" secondItem="Jjy-Va-v2e" secondAttribute="bottom" id="hUo-dU-nIe"/>
+                            <constraint firstItem="E0X-iq-nhk" firstAttribute="leading" secondItem="Jjy-Va-v2e" secondAttribute="leading" id="qfY-bL-mIN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jjy-Va-v2e"/>
+                    </view>
+                    <connections>
+                        <outlet property="myTable" destination="E0X-iq-nhk" id="4Qn-Vs-Bvw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ab-H2-xeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>

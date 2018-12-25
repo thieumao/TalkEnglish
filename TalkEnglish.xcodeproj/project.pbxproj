@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF74D23D21D20E0900A8DFCD /* TopicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF74D23C21D20E0900A8DFCD /* TopicListVC.swift */; };
+		CF74D24321D2108800A8DFCD /* TopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF74D24121D2108800A8DFCD /* TopicTableViewCell.swift */; };
+		CF74D24421D2108800A8DFCD /* TopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF74D24221D2108800A8DFCD /* TopicTableViewCell.xib */; };
 		E57499AA1169FC44C072B62B /* Pods_TalkEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC6DEC064C75723C2CD9F19 /* Pods_TalkEnglish.framework */; };
 		F876E7162061796A00599C47 /* example.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F876E7152061796A00599C47 /* example.mp3 */; };
 		F8BF8DFB1FE1802F0005B2BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF8DFA1FE1802F0005B2BF /* AppDelegate.swift */; };
@@ -20,6 +23,9 @@
 		0CC6DEC064C75723C2CD9F19 /* Pods_TalkEnglish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkEnglish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42691C5993124B8C63D083BA /* Pods-TalkEnglish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkEnglish.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkEnglish/Pods-TalkEnglish.release.xcconfig"; sourceTree = "<group>"; };
 		8C9B0F845F045F2F595DDE0D /* Pods-TalkEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkEnglish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkEnglish/Pods-TalkEnglish.debug.xcconfig"; sourceTree = "<group>"; };
+		CF74D23C21D20E0900A8DFCD /* TopicListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListVC.swift; sourceTree = "<group>"; };
+		CF74D24121D2108800A8DFCD /* TopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableViewCell.swift; sourceTree = "<group>"; };
+		CF74D24221D2108800A8DFCD /* TopicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicTableViewCell.xib; sourceTree = "<group>"; };
 		F876E7152061796A00599C47 /* example.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = example.mp3; sourceTree = "<group>"; };
 		F8BF8DF71FE1802F0005B2BF /* TalkEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BF8DFA1FE1802F0005B2BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +48,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF74D23A21D20DD200A8DFCD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CF74D23E21D2105500A8DFCD /* TopicList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CF74D23E21D2105500A8DFCD /* TopicList */ = {
+			isa = PBXGroup;
+			children = (
+				CF74D23C21D20E0900A8DFCD /* TopicListVC.swift */,
+				CF74D24121D2108800A8DFCD /* TopicTableViewCell.swift */,
+				CF74D24221D2108800A8DFCD /* TopicTableViewCell.xib */,
+			);
+			path = TopicList;
+			sourceTree = "<group>";
+		};
 		D80ABF81F5CD50F60892A12A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +111,7 @@
 		F8BF8DF91FE1802F0005B2BF /* TalkEnglish */ = {
 			isa = PBXGroup;
 			children = (
+				CF74D23A21D20DD200A8DFCD /* Screens */,
 				F876E7132061795100599C47 /* Resources */,
 				F8BF8DFA1FE1802F0005B2BF /* AppDelegate.swift */,
 				F8BF8DFC1FE1802F0005B2BF /* ViewController.swift */,
@@ -171,6 +196,7 @@
 				F876E7162061796A00599C47 /* example.mp3 in Resources */,
 				F8BF8E021FE1802F0005B2BF /* Assets.xcassets in Resources */,
 				F8BF8E001FE1802F0005B2BF /* Main.storyboard in Resources */,
+				CF74D24421D2108800A8DFCD /* TopicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8BF8DFD1FE1802F0005B2BF /* ViewController.swift in Sources */,
+				CF74D24321D2108800A8DFCD /* TopicTableViewCell.swift in Sources */,
 				F8BF8DFB1FE1802F0005B2BF /* AppDelegate.swift in Sources */,
+				CF74D23D21D20E0900A8DFCD /* TopicListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
