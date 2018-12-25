@@ -10,12 +10,14 @@ import UIKit
 
 class TopicTableViewCell: UITableViewCell {
 
-    var index = 0
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var topicButton: UIButton!
+    var index = 0
+    var clickedTopicClosure: ((_ index: Int) -> Void)?
     
     @IBAction func topicClicked(_ sender: Any) {
         print("Thieu Mao \(index)")
+        clickedTopicClosure?(index)
     }
 
     override func awakeFromNib() {

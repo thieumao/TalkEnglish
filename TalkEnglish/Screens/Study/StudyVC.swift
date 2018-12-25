@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StudyVC.swift
 //  TalkEnglish
 //
 //  Created by Thieu Mao on 12/13/17.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class StudyVC: UIViewController {
     
     var myPlayer: AVAudioPlayer?
 
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 }
 
 // IBAction - button click event
-extension ViewController {
+extension StudyVC {
     @IBAction func playButtonClicked(_ sender: Any) {
         playAudio("example.mp3")
     }
@@ -34,7 +34,7 @@ extension ViewController {
 }
 
 // Play MP3
-extension ViewController {
+extension StudyVC {
     func playAudio(_ fileName: String) {
         let path = Bundle.main.path(forResource: fileName, ofType:nil)!
         let url = URL(fileURLWithPath: path)

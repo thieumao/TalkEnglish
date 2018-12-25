@@ -64,6 +64,17 @@ extension TopicListVC: UITableViewDelegate, UITableViewDataSource {
         }
         cell?.topicLabel.text = topList[indexPath.row]
         cell?.index = indexPath.row
+        cell?.clickedTopicClosure = { [weak self] index in
+            self?.pushStudyVC(index)
+        }
         return cell ?? UITableViewCell()
+    }
+
+    private func pushStudyVC(_ index: Int) {
+        print("Click Study VC \(index)")
+        guard let studyVC = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+            .instantiateViewController(withIdentifier: "StudyVC") as? StudyVC
+        else { return }
+        self.navigationController?.pushViewController(studyVC, animated: true)
     }
 }
