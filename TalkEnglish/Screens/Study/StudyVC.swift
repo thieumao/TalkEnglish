@@ -39,6 +39,8 @@ class StudyVC: UIViewController {
         "Vui Mừng Hạnh Phúc", // 19
         "Tiếng Anh Giao Tiếp Thương Mại" // 20
     ]
+    
+    private let noAudioList = [1, 4, 6, 14]
 
     override func viewDidLoad() {
         super.viewDidLoad()
