@@ -66,15 +66,16 @@
 		0CEFC92321D284F800CF0B81 /* 1000cautienganhthuongmai-Tinhhuong28-dailybanhang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC90B21D284F700CF0B81 /* 1000cautienganhthuongmai-Tinhhuong28-dailybanhang.mp3 */; };
 		0CEFC92421D284F800CF0B81 /* Tình huống 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC90C21D284F700CF0B81 /* Tình huống 9.mp3 */; };
 		0CEFC92521D284F800CF0B81 /* 1000cautienganhthuongmai-Tinhhuong31-loicamket.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC90D21D284F700CF0B81 /* 1000cautienganhthuongmai-Tinhhuong31-loicamket.mp3 */; };
-		0CEFC93121D2852700CF0B81 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC92821D2852600CF0B81 /* 2.jpg */; };
-		0CEFC93221D2852700CF0B81 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC92921D2852600CF0B81 /* 3.jpg */; };
-		0CEFC93321D2852700CF0B81 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC92A21D2852600CF0B81 /* 6.jpg */; };
-		0CEFC93421D2852700CF0B81 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC92B21D2852600CF0B81 /* 7.jpg */; };
-		0CEFC93521D2852700CF0B81 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC92C21D2852600CF0B81 /* 5.jpg */; };
-		0CEFC93621D2852700CF0B81 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC92D21D2852600CF0B81 /* 4.jpg */; };
-		0CEFC93721D2852700CF0B81 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC92E21D2852600CF0B81 /* 8.jpg */; };
-		0CEFC93821D2852700CF0B81 /* title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC92F21D2852700CF0B81 /* title.jpg */; };
-		0CEFC93921D2852700CF0B81 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC93021D2852700CF0B81 /* 1.jpg */; };
+		0CEFC94321D28A9300CF0B81 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC93A21D28A9200CF0B81 /* 6.jpg */; };
+		0CEFC94421D28A9300CF0B81 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC93B21D28A9200CF0B81 /* 2.jpg */; };
+		0CEFC94521D28A9300CF0B81 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC93C21D28A9200CF0B81 /* 4.jpg */; };
+		0CEFC94621D28A9300CF0B81 /* title.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC93D21D28A9200CF0B81 /* title.jpg */; };
+		0CEFC94721D28A9300CF0B81 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC93E21D28A9200CF0B81 /* 7.jpg */; };
+		0CEFC94821D28A9300CF0B81 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC93F21D28A9200CF0B81 /* 8.jpg */; };
+		0CEFC94921D28A9300CF0B81 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC94021D28A9200CF0B81 /* 5.jpg */; };
+		0CEFC94A21D28A9300CF0B81 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC94121D28A9300CF0B81 /* 3.jpg */; };
+		0CEFC94B21D28A9300CF0B81 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC94221D28A9300CF0B81 /* 1.jpg */; };
+		0CEFC94D21D28AA200CF0B81 /* Tutorial.docx in Resources */ = {isa = PBXBuildFile; fileRef = 0CEFC94C21D28AA200CF0B81 /* Tutorial.docx */; };
 		CF74D23D21D20E0900A8DFCD /* TopicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF74D23C21D20E0900A8DFCD /* TopicListVC.swift */; };
 		CF74D24321D2108800A8DFCD /* TopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF74D24121D2108800A8DFCD /* TopicTableViewCell.swift */; };
 		CF74D24421D2108800A8DFCD /* TopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF74D24221D2108800A8DFCD /* TopicTableViewCell.xib */; };
@@ -148,16 +149,16 @@
 		0CEFC90B21D284F700CF0B81 /* 1000cautienganhthuongmai-Tinhhuong28-dailybanhang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1000cautienganhthuongmai-Tinhhuong28-dailybanhang.mp3"; sourceTree = "<group>"; };
 		0CEFC90C21D284F700CF0B81 /* Tình huống 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tình huống 9.mp3"; sourceTree = "<group>"; };
 		0CEFC90D21D284F700CF0B81 /* 1000cautienganhthuongmai-Tinhhuong31-loicamket.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1000cautienganhthuongmai-Tinhhuong31-loicamket.mp3"; sourceTree = "<group>"; };
-		0CEFC92721D2851800CF0B81 /* Tutorial.docx */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tutorial.docx; path = Data/Tutorial.docx; sourceTree = SOURCE_ROOT; };
-		0CEFC92821D2852600CF0B81 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = Data/22CommunicationTopicsInEnglish/Photo/2.jpg; sourceTree = SOURCE_ROOT; };
-		0CEFC92921D2852600CF0B81 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = Data/22CommunicationTopicsInEnglish/Photo/3.jpg; sourceTree = SOURCE_ROOT; };
-		0CEFC92A21D2852600CF0B81 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 6.jpg; path = Data/22CommunicationTopicsInEnglish/Photo/6.jpg; sourceTree = SOURCE_ROOT; };
-		0CEFC92B21D2852600CF0B81 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7.jpg; path = Data/22CommunicationTopicsInEnglish/Photo/7.jpg; sourceTree = SOURCE_ROOT; };
-		0CEFC92C21D2852600CF0B81 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpg; path = Data/22CommunicationTopicsInEnglish/Photo/5.jpg; sourceTree = SOURCE_ROOT; };
-		0CEFC92D21D2852600CF0B81 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = Data/22CommunicationTopicsInEnglish/Photo/4.jpg; sourceTree = SOURCE_ROOT; };
-		0CEFC92E21D2852600CF0B81 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8.jpg; path = Data/22CommunicationTopicsInEnglish/Photo/8.jpg; sourceTree = SOURCE_ROOT; };
-		0CEFC92F21D2852700CF0B81 /* title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = title.jpg; path = Data/22CommunicationTopicsInEnglish/Photo/title.jpg; sourceTree = SOURCE_ROOT; };
-		0CEFC93021D2852700CF0B81 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = Data/22CommunicationTopicsInEnglish/Photo/1.jpg; sourceTree = SOURCE_ROOT; };
+		0CEFC93A21D28A9200CF0B81 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		0CEFC93B21D28A9200CF0B81 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		0CEFC93C21D28A9200CF0B81 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		0CEFC93D21D28A9200CF0B81 /* title.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title.jpg; sourceTree = "<group>"; };
+		0CEFC93E21D28A9200CF0B81 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		0CEFC93F21D28A9200CF0B81 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		0CEFC94021D28A9200CF0B81 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		0CEFC94121D28A9300CF0B81 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		0CEFC94221D28A9300CF0B81 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		0CEFC94C21D28AA200CF0B81 /* Tutorial.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tutorial.docx; sourceTree = "<group>"; };
 		42691C5993124B8C63D083BA /* Pods-TalkEnglish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkEnglish.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkEnglish/Pods-TalkEnglish.release.xcconfig"; sourceTree = "<group>"; };
 		8C9B0F845F045F2F595DDE0D /* Pods-TalkEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkEnglish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkEnglish/Pods-TalkEnglish.debug.xcconfig"; sourceTree = "<group>"; };
 		CF74D23C21D20E0900A8DFCD /* TopicListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListVC.swift; sourceTree = "<group>"; };
@@ -246,16 +247,16 @@
 		0CEFC92621D2850D00CF0B81 /* Tutorials */ = {
 			isa = PBXGroup;
 			children = (
-				0CEFC93021D2852700CF0B81 /* 1.jpg */,
-				0CEFC92821D2852600CF0B81 /* 2.jpg */,
-				0CEFC92921D2852600CF0B81 /* 3.jpg */,
-				0CEFC92D21D2852600CF0B81 /* 4.jpg */,
-				0CEFC92C21D2852600CF0B81 /* 5.jpg */,
-				0CEFC92A21D2852600CF0B81 /* 6.jpg */,
-				0CEFC92B21D2852600CF0B81 /* 7.jpg */,
-				0CEFC92E21D2852600CF0B81 /* 8.jpg */,
-				0CEFC92F21D2852700CF0B81 /* title.jpg */,
-				0CEFC92721D2851800CF0B81 /* Tutorial.docx */,
+				0CEFC94C21D28AA200CF0B81 /* Tutorial.docx */,
+				0CEFC94221D28A9300CF0B81 /* 1.jpg */,
+				0CEFC93B21D28A9200CF0B81 /* 2.jpg */,
+				0CEFC94121D28A9300CF0B81 /* 3.jpg */,
+				0CEFC93C21D28A9200CF0B81 /* 4.jpg */,
+				0CEFC94021D28A9200CF0B81 /* 5.jpg */,
+				0CEFC93A21D28A9200CF0B81 /* 6.jpg */,
+				0CEFC93E21D28A9200CF0B81 /* 7.jpg */,
+				0CEFC93F21D28A9200CF0B81 /* 8.jpg */,
+				0CEFC93D21D28A9200CF0B81 /* title.jpg */,
 			);
 			path = Tutorials;
 			sourceTree = "<group>";
@@ -430,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CEFC94421D28A9300CF0B81 /* 2.jpg in Resources */,
 				0CEFC8F321D284C200CF0B81 /* 0.mp3 in Resources */,
 				0CEFC92421D284F800CF0B81 /* Tình huống 9.mp3 in Resources */,
 				0CEFC8ED21D284C200CF0B81 /* 2.mp3 in Resources */,
@@ -438,7 +440,6 @@
 				0CEFC91421D284F800CF0B81 /* Tình huống 8.mp3 in Resources */,
 				0CEFC8E621D284C200CF0B81 /* 11.mp3 in Resources */,
 				0CEFC8CC21D284A300CF0B81 /* 12.pdf in Resources */,
-				0CEFC93621D2852700CF0B81 /* 4.jpg in Resources */,
 				0CEFC8C921D284A300CF0B81 /* 3.pdf in Resources */,
 				0CEFC8E921D284C200CF0B81 /* 5.mp3 in Resources */,
 				0CEFC91B21D284F800CF0B81 /* Situation 5- Introducing Products - Business English for Listening.mp4 in Resources */,
@@ -450,23 +451,25 @@
 				0CEFC8D121D284A300CF0B81 /* 7.pdf in Resources */,
 				0CEFC91D21D284F800CF0B81 /* Tiếng Anh giao tiếp thương mại - NhungDT - v.1.0.docx in Resources */,
 				0CEFC8C721D284A300CF0B81 /* 9.pdf in Resources */,
+				0CEFC94821D28A9300CF0B81 /* 8.jpg in Resources */,
 				0CEFC91A21D284F800CF0B81 /* Situation 5- Customer Service - Business English for Listening.mp4 in Resources */,
 				0CEFC8C521D284A300CF0B81 /* 11.pdf in Resources */,
 				0CEFC8CD21D284A300CF0B81 /* 16.pdf in Resources */,
-				0CEFC93121D2852700CF0B81 /* 2.jpg in Resources */,
 				F8BF8E051FE1802F0005B2BF /* LaunchScreen.storyboard in Resources */,
+				0CEFC94521D28A9300CF0B81 /* 4.jpg in Resources */,
 				0CEFC8EC21D284C200CF0B81 /* 18.mp3 in Resources */,
-				0CEFC93821D2852700CF0B81 /* title.jpg in Resources */,
+				0CEFC94621D28A9300CF0B81 /* title.jpg in Resources */,
+				0CEFC94921D28A9300CF0B81 /* 5.jpg in Resources */,
 				0CEFC92321D284F800CF0B81 /* 1000cautienganhthuongmai-Tinhhuong28-dailybanhang.mp3 in Resources */,
 				0CEFC8EE21D284C200CF0B81 /* 16.mp3 in Resources */,
-				0CEFC93421D2852700CF0B81 /* 7.jpg in Resources */,
+				0CEFC94D21D28AA200CF0B81 /* Tutorial.docx in Resources */,
 				0CEFC8CF21D284A300CF0B81 /* 14.pdf in Resources */,
 				0CEFC91F21D284F800CF0B81 /* tienganhthuongmai181-190.mp3 in Resources */,
 				0CEFC8E721D284C200CF0B81 /* 3.mp3 in Resources */,
 				0CEFC8F021D284C200CF0B81 /* 7.mp3 in Resources */,
+				0CEFC94721D28A9300CF0B81 /* 7.jpg in Resources */,
 				0CEFC8CA21D284A300CF0B81 /* 0.pdf in Resources */,
 				0CEFC91521D284F800CF0B81 /* Situation 3- Market Research - Business English for Listening.mp4 in Resources */,
-				0CEFC93221D2852700CF0B81 /* 3.jpg in Resources */,
 				0CEFC91E21D284F800CF0B81 /* tienganhthuongmai151-160.mp3 in Resources */,
 				0CEFC8F221D284C200CF0B81 /* 10.mp3 in Resources */,
 				0CEFC8D321D284A300CF0B81 /* 17.pdf in Resources */,
@@ -474,7 +477,6 @@
 				F876E7162061796A00599C47 /* example.mp3 in Resources */,
 				0CEFC92021D284F800CF0B81 /* Tình huống 6.mp3 in Resources */,
 				0CEFC8CE21D284A300CF0B81 /* 5.pdf in Resources */,
-				0CEFC93521D2852700CF0B81 /* 5.jpg in Resources */,
 				0CEFC8C321D284A300CF0B81 /* 13.pdf in Resources */,
 				0CEFC90E21D284F800CF0B81 /* 1000cautienganhthuongmai-Tinhhuong26-maudichbutru.mp3 in Resources */,
 				0CEFC91721D284F800CF0B81 /* 1000cautienganhthuongmai-Tinhhuong30-loidenghi.mp3 in Resources */,
@@ -485,16 +487,16 @@
 				0CEFC91121D284F800CF0B81 /* 1000cautienganhthuongmai-Tinhhuong23-thamquannhamay.mp3 in Resources */,
 				0CEFC92521D284F800CF0B81 /* 1000cautienganhthuongmai-Tinhhuong31-loicamket.mp3 in Resources */,
 				0CEFC8C621D284A300CF0B81 /* 2.pdf in Resources */,
-				0CEFC93721D2852700CF0B81 /* 8.jpg in Resources */,
 				0CEFC91321D284F800CF0B81 /* tienganhthuongmai161-170.mp3 in Resources */,
-				0CEFC93921D2852700CF0B81 /* 1.jpg in Resources */,
 				0CEFC8D421D284A300CF0B81 /* 18.pdf in Resources */,
+				0CEFC94B21D28A9300CF0B81 /* 1.jpg in Resources */,
 				0CEFC8D621D284A300CF0B81 /* 19.pdf in Resources */,
 				0CEFC8CB21D284A300CF0B81 /* 10.pdf in Resources */,
 				0CEFC91221D284F800CF0B81 /* tienganhthuongmai121-130.mp3 in Resources */,
-				0CEFC93321D2852700CF0B81 /* 6.jpg in Resources */,
+				0CEFC94321D28A9300CF0B81 /* 6.jpg in Resources */,
 				0CEFC91921D284F800CF0B81 /* SItuation 1- Self Introduction - Business English for Listening.mp4 in Resources */,
 				0CEFC8E821D284C200CF0B81 /* 13.mp3 in Resources */,
+				0CEFC94A21D28A9300CF0B81 /* 3.jpg in Resources */,
 				0CEFC8D521D284A300CF0B81 /* 8.pdf in Resources */,
 				0CEFC8C421D284A300CF0B81 /* 4.pdf in Resources */,
 				0CEFC91821D284F800CF0B81 /* 1000cautienganhthuongmai-Tinhhuong22-thamcongtydoitac.mp3 in Resources */,
