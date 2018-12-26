@@ -11,11 +11,23 @@ import PDFKit
 import AVFoundation
 
 class StudyVC: UIViewController {
-
+    // public
     var index = 0
     var studyTitle = ""
+
+    // player
     private var myPlayer: AVAudioPlayer?
 
+    // check visible views
+    private let HEIGHT_PLAYER: CGFloat = 64.0
+    private var hasAudio: Bool = true
+
+    // gesture
+    private var panRecognizer: UIPanGestureRecognizer?
+    private var panStartPoint: CGPoint?
+
+    // outlet
+    @IBOutlet weak var heightPlayer: NSLayoutConstraint!
     @IBOutlet weak var topPDFViewer: NSLayoutConstraint!
     @IBOutlet weak var pdfViewer: CustomPDFView!
     @IBOutlet weak var playerView: UIView!
@@ -47,22 +59,70 @@ class StudyVC: UIViewController {
     
     private let noAudioList = [1, 4, 6, 14, 20]
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         title = studyTitle
         openPDFViewer()
         checkVisible()
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
 
-// view
+// MARK: Gesture for PDF Viewer
+extension StudyVC: UIGestureRecognizerDelegate {
+    // enable gesture
+    func gestureRecognizer(
+        _ gestureRecognizer: UIGestureRecognizer,
+        shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer
+    ) -> Bool {
+        return true
+    }
+
+    private func addPanGesture() {
+        panRecognizer = UIPanGestureRecognizer.init(target: self, action: #selector(panThisPDF(recognizer:)))
+        panRecognizer?.delegate = self
+        if let pan = panRecognizer {
+            pdfViewer.addGestureRecognizer(pan)
+        }
+    }
+
+    @objc func panThisPDF(recognizer: UIPanGestureRecognizer) {
+        switch (recognizer.state) {
+        case .began:
+            panStartPoint = recognizer.translation(in: self.pdfViewer)
+            break;
+        case .changed:
+            let currentPoint = recognizer.translation(in: self.pdfViewer)
+            guard let panStartPoint = panStartPoint else { return }
+            let distance = currentPoint.y - panStartPoint.y
+            print("distance = \(distance)")
+            if distance < -100 {
+                // show
+                showFull()
+            } else if distance > 100 {
+                // hide
+                showNormal()
+            } else {
+                // nothing
+            }
+            break;
+        case .ended:
+            break;
+        case .cancelled:
+            break;
+        default:
+            break;
+        }
+    }
+}
+
+// MARK: View & Check Visible
 extension StudyVC {
     private func checkVisible() {
-        let hasAudio = !noAudioList.contains(index)
+        hasAudio = !noAudioList.contains(index)
         if !hasAudio {
             visibleForNoAudio()
         } else {
@@ -70,14 +130,41 @@ extension StudyVC {
         }
     }
 
-    private func visibleForHasAudio() {
-        playerView.isHidden = false
-        topPDFViewer.constant = playerView.bounds.height
+    private func visibleForNoAudio() {
+        UIView.animate(withDuration: 0.5, animations: { [weak self] in
+            guard let self = self else { return }
+            self.heightPlayer.constant = 0
+            self.topPDFViewer.constant = 0
+            self.playerView.isHidden = true
+            self.navigationController?.navigationBar.isHidden = false
+        }, completion: nil)
     }
 
-    private func visibleForNoAudio() {
-        playerView.isHidden = true
-        topPDFViewer.constant = 0
+    private func visibleForHasAudio() {
+        UIView.animate(withDuration: 0.5, animations: { [weak self] in
+            guard let self = self else { return }
+            self.playerView.isHidden = false
+            self.topPDFViewer.constant = self.HEIGHT_PLAYER
+            self.navigationController?.navigationBar.isHidden = false
+        }, completion: nil)
+    }
+
+    private func showFull() {
+        UIView.animate(withDuration: 0.5, animations: { [weak self] in
+            guard let self = self else { return }
+            self.playerView.isHidden = true
+            self.topPDFViewer.constant = 1
+            self.navigationController?.navigationBar.isHidden = true
+        }, completion: nil)
+    }
+
+    private func showNormal() {
+        UIView.animate(withDuration: 0.5, animations: { [weak self] in
+            guard let self = self else { return }
+            self.playerView.isHidden = self.hasAudio ? false : true
+            self.topPDFViewer.constant = self.hasAudio ? self.HEIGHT_PLAYER : 1
+            self.navigationController?.navigationBar.isHidden = false
+        }, completion: nil)
     }
 
     private func openPDFViewer() {
@@ -87,10 +174,12 @@ extension StudyVC {
         pdfViewer.document = pdfdocument
         pdfViewer.displayMode = PDFDisplayMode.singlePageContinuous
         pdfViewer.autoScales = true
+
+        addPanGesture()
     }
 }
 
-// IBAction - button click event
+// MARK: IBAction - button click event
 extension StudyVC {
     @IBAction func playButtonClicked(_ sender: Any) {
         playAudio("\(index).mp3")
@@ -105,10 +194,10 @@ extension StudyVC {
     }
 }
 
-// Play MP3
+// MARK: Play MP3
 extension StudyVC {
     private func playAudio(_ fileName: String) {
-        let path = Bundle.main.path(forResource: fileName, ofType:nil)!
+        guard let path = Bundle.main.path(forResource: fileName, ofType:nil) else { return }
         let url = URL(fileURLWithPath: path)
         
         do {

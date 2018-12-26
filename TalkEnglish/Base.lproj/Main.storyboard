@@ -72,6 +72,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="heightPlayer" destination="UQt-4X-T7x" id="8PG-4y-vTC"/>
                         <outlet property="pdfViewer" destination="KGy-UR-y3Z" id="TI5-dw-t2v"/>
                         <outlet property="playerView" destination="fMg-0T-WHX" id="Ax0-U9-Ia0"/>
                         <outlet property="topPDFViewer" destination="REr-xU-o29" id="EnV-62-eG3"/>
