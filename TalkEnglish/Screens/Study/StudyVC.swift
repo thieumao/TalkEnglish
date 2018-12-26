@@ -57,7 +57,10 @@ class StudyVC: UIViewController {
         openPDFViewer()
         checkVisible()
     }
+}
 
+// view
+extension StudyVC {
     private func checkVisible() {
         let hasAudio = !noAudioList.contains(index)
         if !hasAudio {
@@ -79,7 +82,7 @@ class StudyVC: UIViewController {
 
     private func openPDFViewer() {
         guard let url = Bundle.main.url(forResource: "\(index)", withExtension: "pdf")
-        else { return }
+            else { return }
         let pdfdocument = PDFDocument(url: url)
         pdfViewer.document = pdfdocument
         pdfViewer.displayMode = PDFDisplayMode.singlePageContinuous
@@ -104,7 +107,7 @@ extension StudyVC {
 
 // Play MP3
 extension StudyVC {
-    func playAudio(_ fileName: String) {
+    private func playAudio(_ fileName: String) {
         let path = Bundle.main.path(forResource: fileName, ofType:nil)!
         let url = URL(fileURLWithPath: path)
         
@@ -116,11 +119,11 @@ extension StudyVC {
         }
     }
     
-    func pauseAudio() {
+    private func pauseAudio() {
         myPlayer?.pause()
     }
     
-    func replayAudio(){
+    private func replayAudio(){
         myPlayer?.play()
     }
 }
