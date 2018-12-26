@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PDFKit
 import AVFoundation
 
 class StudyVC: UIViewController {
@@ -14,6 +15,10 @@ class StudyVC: UIViewController {
     var index = 0
     var studyTitle = ""
     private var myPlayer: AVAudioPlayer?
+
+    @IBOutlet weak var topPDFViewer: NSLayoutConstraint!
+    @IBOutlet weak var pdfViewer: CustomPDFView!
+    @IBOutlet weak var playerView: UIView!
 
     //  21 tình huống giao tiếp thường gặp
     private let topics = [
@@ -49,6 +54,36 @@ class StudyVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         title = studyTitle
+        openPDFViewer()
+        checkVisible()
+    }
+
+    private func checkVisible() {
+        let hasAudio = !noAudioList.contains(index)
+        if !hasAudio {
+            visibleForNoAudio()
+        } else {
+            visibleForHasAudio()
+        }
+    }
+
+    private func visibleForHasAudio() {
+        playerView.isHidden = false
+        topPDFViewer.constant = playerView.bounds.height
+    }
+
+    private func visibleForNoAudio() {
+        playerView.isHidden = true
+        topPDFViewer.constant = 0
+    }
+
+    private func openPDFViewer() {
+        guard let url = Bundle.main.url(forResource: "\(index)", withExtension: "pdf")
+        else { return }
+        let pdfdocument = PDFDocument(url: url)
+        pdfViewer.document = pdfdocument
+        pdfViewer.displayMode = PDFDisplayMode.singlePageContinuous
+        pdfViewer.autoScales = true
     }
 }
 

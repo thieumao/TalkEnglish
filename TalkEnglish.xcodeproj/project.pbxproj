@@ -79,6 +79,7 @@
 		CF74D23D21D20E0900A8DFCD /* TopicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF74D23C21D20E0900A8DFCD /* TopicListVC.swift */; };
 		CF74D24321D2108800A8DFCD /* TopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF74D24121D2108800A8DFCD /* TopicTableViewCell.swift */; };
 		CF74D24421D2108800A8DFCD /* TopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF74D24221D2108800A8DFCD /* TopicTableViewCell.xib */; };
+		CFB6F54821D318B1008698F6 /* CustomPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6F54721D318B1008698F6 /* CustomPDFView.swift */; };
 		E57499AA1169FC44C072B62B /* Pods_TalkEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC6DEC064C75723C2CD9F19 /* Pods_TalkEnglish.framework */; };
 		F876E7162061796A00599C47 /* example.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F876E7152061796A00599C47 /* example.mp3 */; };
 		F8BF8DFB1FE1802F0005B2BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF8DFA1FE1802F0005B2BF /* AppDelegate.swift */; };
@@ -164,6 +165,7 @@
 		CF74D23C21D20E0900A8DFCD /* TopicListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListVC.swift; sourceTree = "<group>"; };
 		CF74D24121D2108800A8DFCD /* TopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicTableViewCell.swift; sourceTree = "<group>"; };
 		CF74D24221D2108800A8DFCD /* TopicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicTableViewCell.xib; sourceTree = "<group>"; };
+		CFB6F54721D318B1008698F6 /* CustomPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPDFView.swift; sourceTree = "<group>"; };
 		F876E7152061796A00599C47 /* example.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = example.mp3; sourceTree = "<group>"; };
 		F8BF8DF71FE1802F0005B2BF /* TalkEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BF8DFA1FE1802F0005B2BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -288,6 +290,14 @@
 			path = TopicList;
 			sourceTree = "<group>";
 		};
+		CFB6F54621D3188B008698F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6F54721D318B1008698F6 /* CustomPDFView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D80ABF81F5CD50F60892A12A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +361,7 @@
 		F8BF8DF91FE1802F0005B2BF /* TalkEnglish */ = {
 			isa = PBXGroup;
 			children = (
+				CFB6F54621D3188B008698F6 /* Views */,
 				CF74D23A21D20DD200A8DFCD /* Screens */,
 				F876E7132061795100599C47 /* Resources */,
 				F8BF8DFA1FE1802F0005B2BF /* AppDelegate.swift */,
@@ -540,6 +551,7 @@
 				CF74D24321D2108800A8DFCD /* TopicTableViewCell.swift in Sources */,
 				F8BF8DFB1FE1802F0005B2BF /* AppDelegate.swift in Sources */,
 				CF74D23D21D20E0900A8DFCD /* TopicListVC.swift in Sources */,
+				CFB6F54821D318B1008698F6 /* CustomPDFView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
