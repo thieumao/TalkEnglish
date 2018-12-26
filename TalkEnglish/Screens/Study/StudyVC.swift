@@ -90,7 +90,7 @@ class StudyVC: UIViewController {
 // IBAction - button click event
 extension StudyVC {
     @IBAction func playButtonClicked(_ sender: Any) {
-        playAudio("example.mp3")
+        playAudio("\(index).mp3")
     }
     
     @IBAction func pauseButtonClicked(_ sender: Any) {
