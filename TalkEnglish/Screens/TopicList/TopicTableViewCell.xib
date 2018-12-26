@@ -19,9 +19,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvy-ZW-gir">
-                        <rect key="frame" x="24" y="11.5" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZX-Pr-CUY">
+                        <rect key="frame" x="16" y="11.5" width="10.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvy-ZW-gir">
+                        <rect key="frame" x="50.5" y="11.5" width="48.5" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -33,16 +39,19 @@
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="Yvy-ZW-gir" firstAttribute="leading" secondItem="SZX-Pr-CUY" secondAttribute="trailing" constant="24" id="1c3-zj-IfY"/>
                     <constraint firstItem="76C-lO-UnZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3tU-7D-hfn"/>
-                    <constraint firstItem="Yvy-ZW-gir" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="47z-kC-hVb"/>
                     <constraint firstAttribute="trailing" secondItem="76C-lO-UnZ" secondAttribute="trailing" id="8Qu-pp-y2L"/>
                     <constraint firstItem="76C-lO-UnZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MPR-bw-6jY"/>
+                    <constraint firstItem="SZX-Pr-CUY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UuI-Wz-es3"/>
                     <constraint firstItem="Yvy-ZW-gir" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ft8-7d-5nB"/>
                     <constraint firstAttribute="bottom" secondItem="76C-lO-UnZ" secondAttribute="bottom" constant="-0.5" id="m1x-lV-uxW"/>
+                    <constraint firstItem="SZX-Pr-CUY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nti-dV-o8j"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="indexLabel" destination="SZX-Pr-CUY" id="o2E-qD-Gnh"/>
                 <outlet property="topicButton" destination="76C-lO-UnZ" id="sxm-4a-akZ"/>
                 <outlet property="topicLabel" destination="Yvy-ZW-gir" id="9ib-bj-osf"/>
             </connections>

@@ -10,6 +10,7 @@ import UIKit
 
 class TopicTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var topicButton: UIButton!
     var index = 0

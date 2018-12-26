@@ -32,19 +32,28 @@ class TopicListVC: UIViewController {
         "Lo lắng buồn chán", // 17
         "Nói về sở thích", // 18
         "Vui Mừng Hạnh Phúc", // 19
-        "Tiếng Anh Giao Tiếp Thương Mại" // 20
+//        "Tiếng Anh Giao Tiếp Thương Mại" // 20
     ]
 
     @IBOutlet weak var myTable: UITableView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         myTable.delegate = self
         myTable.dataSource = self
+        title = "Giao Tiếp Tiếng Anh"
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
 }
 
 extension TopicListVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 64
+    }
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -63,6 +72,7 @@ extension TopicListVC: UITableViewDelegate, UITableViewDataSource {
             cell = tableView.dequeueReusableCell(withIdentifier: "TopicTableViewCell") as? TopicTableViewCell
         }
         cell?.topicLabel.text = topics[indexPath.row]
+        cell?.indexLabel.text = "\(indexPath.row + 1)"
         cell?.index = indexPath.row
         cell?.clickedTopicClosure = { [weak self] index in
             self?.pushStudyVC(index)
